@@ -1,0 +1,6 @@
+# fichiers build / compilateur
+/build/
+*.o
+*.exe
+*.out
+*.obj
