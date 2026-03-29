@@ -1,3 +1,0 @@
-C:/Ecole/IMAC3/C++/prog_s2/build/CMakeFiles/td.dir
-C:/Ecole/IMAC3/C++/prog_s2/build/CMakeFiles/edit_cache.dir
-C:/Ecole/IMAC3/C++/prog_s2/build/CMakeFiles/rebuild_cache.dir
