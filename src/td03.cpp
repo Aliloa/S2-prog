@@ -97,20 +97,25 @@ std::vector<int> generate_random_vector(size_t const size, int const max = 100)
 
 //----------------------------------------- Dichotomie
 
-int search(const std::vector<int>& vec, int value) {
+int search(const std::vector<int> &vec, int value)
+{
     int left = 0;
     int right = vec.size() - 1;
 
-    while (left <= right) {
+    while (left <= right)
+    {
         int middle = left + (right - left) / 2;
 
-        if (vec[middle] == value) {
+        if (vec[middle] == value)
+        {
             return middle; // trouvé
         }
-        else if (vec[middle] < value) {
+        else if (vec[middle] < value)
+        {
             left = middle + 1; // droite
         }
-        else {
+        else
+        {
             right = middle - 1; // gauche
         }
     }
@@ -118,11 +123,11 @@ int search(const std::vector<int>& vec, int value) {
     return -1; // pas trouvé
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     std::vector<int> array{12, 3, 4, 51, 67, 7, 8, 9, 101, 8, 8};
 
-     std::cout << "taille du tableau: " << array.size() << std::endl;
+    std::cout << "taille du tableau: " << array.size() << std::endl;
     // -----------------------------TRI A BULLE
     std::vector<int> bubble_array{array};
 
@@ -164,23 +169,23 @@ int main(int argc, char const *argv[])
 
     //-------------------------------------------dichotomie
     // tableau 1
-    std::vector<int> tab1 {1, 2, 2, 3, 4, 8, 12};
+    std::vector<int> tab1{1, 2, 2, 3, 4, 8, 12};
     std::cout << "Indice de 8 : " << search(tab1, 8) << std::endl;
 
     // tableau 2
-    std::vector<int> tab2 {1, 2, 3, 3, 6, 14, 12, 15};
+    std::vector<int> tab2{1, 2, 3, 3, 6, 14, 12, 15};
     std::cout << "Indice de 15 : " << search(tab2, 15) << std::endl;
 
     // tableau 3
-    std::vector<int> tab3 {2, 2, 3, 4, 5, 8, 12, 15, 16};
+    std::vector<int> tab3{2, 2, 3, 4, 5, 8, 12, 15, 16};
     std::cout << "Indice de 16 : " << search(tab3, 16) << std::endl;
 
     // tableau 4
-    std::vector<int> tab4 {5, 6, 7, 8, 9, 10, 11, 12, 13};
+    std::vector<int> tab4{5, 6, 7, 8, 9, 10, 11, 12, 13};
     std::cout << "Indice de 6 : " << search(tab4, 6) << std::endl;
 
     // tableau 5
-    std::vector<int> tab5 {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    std::vector<int> tab5{1, 2, 3, 4, 5, 6, 7, 8, 9};
     std::cout << "Indice de 10 : " << search(tab5, 10) << std::endl;
 
     return 0;
