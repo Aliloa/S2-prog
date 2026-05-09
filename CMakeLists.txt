@@ -11,4 +11,4 @@ configure_file(map.txt map.txt COPYONLY)
 configure_file(input_guard_patrol.txt input_guard_patrol.txt COPYONLY)
 
 # On indique que l'on veut créer un exécutable "helloImac" compilé à partir du fichier helloImac.cpp
-add_executable(td src/td05.cpp)
+add_executable(td src/td06.cpp)

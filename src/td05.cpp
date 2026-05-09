@@ -365,7 +365,7 @@ int compter_boucles(Input_Structure input)
         if (is_loop(input))
             count++;
 
-        // enlèver l'obstacle
+        // enlever l'obstacle
         input.obstacles.erase({p.x, p.y});
     }
 
